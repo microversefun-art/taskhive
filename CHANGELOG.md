@@ -1,6 +1,15 @@
 # Changelog
 
-All notable changes to this repository are documented here. Detailed per-version notes live in `platform/CHANGELOG_v*.md`.
+All notable changes to this repository are documented here.
+For full details, see the per-version notes in:
+- `platform/CHANGELOG_v16.2.md`
+- `platform/CHANGELOG_v16.3.md`
+- `platform/CHANGELOG_v16.4.md`
+- `platform/CHANGELOG_v16.5.md`
+- `platform/CHANGELOG_v16.6.md`
+- `platform/CHANGELOG_v17.0.md`
+- `platform/CHANGELOG_v17.1.md`
+- `platform/CHANGELOG_v18.0.md`
 
 ## 18.0.0 — 2026-02-02
 - Escrow system backend manager (holding/release/refund/disputes)
