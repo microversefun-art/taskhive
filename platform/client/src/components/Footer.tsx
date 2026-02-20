@@ -1,10 +1,17 @@
 import React from "react";
-import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
 import { Link } from "wouter";
 
 const CONTACT_EMAIL = "support@taskhive.com";
 const CONTACT_PHONE = "+7 (999) XXX-XX-XX";
 const CONTACT_ADDRESS = "Москва, Россия";
+
+const SOCIAL_LINKS = [
+  { name: "VK", href: "https://vk.com/" },
+  { name: "MAX", href: "https://max.ru/" },
+  { name: "Dzen", href: "https://dzen.ru/" },
+  { name: "OK", href: "https://ok.ru/" },
+];
 
 export const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -21,18 +28,17 @@ export const Footer: React.FC = () => {
               Платформа для поиска срочных работ и развития карьеры. Работайте здесь и сейчас, развивайтесь и зарабатывайте.
             </p>
             <div className="flex gap-3">
-              <a href="#" className="text-slate-400 hover:text-white transition-colors">
-                <Facebook size={18} />
-              </a>
-              <a href="#" className="text-slate-400 hover:text-white transition-colors">
-                <Twitter size={18} />
-              </a>
-              <a href="#" className="text-slate-400 hover:text-white transition-colors">
-                <Linkedin size={18} />
-              </a>
-              <a href="#" className="text-slate-400 hover:text-white transition-colors">
-                <Instagram size={18} />
-              </a>
+              {SOCIAL_LINKS.map((social) => (
+                <a
+                  key={social.name}
+                  href={social.href}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex h-8 min-w-8 items-center justify-center rounded-md border border-slate-700 px-2 text-xs font-semibold text-slate-300 hover:border-slate-500 hover:text-white transition-colors"
+                >
+                  {social.name}
+                </a>
+              ))}
             </div>
           </div>
 
@@ -68,24 +74,24 @@ export const Footer: React.FC = () => {
             <h4 className="text-white font-semibold mb-4">Правовая информация</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="#privacy" className="text-slate-400 hover:text-white transition-colors">
-                  Политика конфиденциальности
-                </a>
+                <Link href="/privacy" className="text-slate-400 hover:text-white transition-colors">
+                  Политика конфиденциальности (152-ФЗ)
+                </Link>
               </li>
               <li>
-                <a href="#terms" className="text-slate-400 hover:text-white transition-colors">
-                  Условия использования
-                </a>
+                <Link href="/terms" className="text-slate-400 hover:text-white transition-colors">
+                  Пользовательское соглашение
+                </Link>
               </li>
               <li>
-                <a href="#cookies" className="text-slate-400 hover:text-white transition-colors">
+                <Link href="/info/cookies" className="text-slate-400 hover:text-white transition-colors">
                   Политика cookies
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#data" className="text-slate-400 hover:text-white transition-colors">
-                  Обработка данных
-                </a>
+                <Link href="/info/data-processing" className="text-slate-400 hover:text-white transition-colors">
+                  Обработка персональных данных
+                </Link>
               </li>
             </ul>
           </div>
