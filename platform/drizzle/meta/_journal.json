@@ -1,0 +1,48 @@
+{
+  "version": "7",
+  "dialect": "mysql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1769360102910,
+      "tag": "0000_little_chronomancer",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1769360184855,
+      "tag": "0001_rapid_ezekiel_stane",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1769630751804,
+      "tag": "0002_clammy_radioactive_man",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "5",
+      "when": 1769631424019,
+      "tag": "0003_round_mockingbird",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "5",
+      "when": 1770000180092,
+      "tag": "0004_lame_moonstone",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "5",
+      "when": 1770117310037,
+      "tag": "0005_dapper_spectrum",
+      "breakpoints": true
+    }
+  ]
+}

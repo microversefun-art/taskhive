@@ -1,0 +1,46 @@
+{
+  "name": "taskhive-mobile",
+  "displayName": "TaskHive",
+  "version": "1.0.0",
+  "description": "TaskHive Mobile App - Платформа для поиска подработок",
+  "expo": {
+    "name": "TaskHive",
+    "slug": "taskhive-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTabletMode": true,
+      "bundleIdentifier": "com.taskhive.mobile"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.taskhive.mobile"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow TaskHive to access your location."
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow TaskHive to access your camera."
+        }
+      ]
+    ]
+  }
+}
