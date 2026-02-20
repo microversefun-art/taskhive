@@ -8,6 +8,7 @@ const CONTACT_ADDRESS = "Москва, Россия";
 
 const SOCIAL_LINKS = [
   { name: "VK", href: "https://vk.com/" },
+  { name: "Telegram", href: "https://t.me/" },
   { name: "MAX", href: "https://max.ru/" },
   { name: "Dzen", href: "https://dzen.ru/" },
   { name: "OK", href: "https://ok.ru/" },
